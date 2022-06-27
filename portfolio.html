@@ -15,7 +15,13 @@
 		/>
 
 		<!--========== Normalize styles ========== -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link 
+			rel="stylesheet" 
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" 
+			integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" 
+			crossorigin="anonymous" 
+			referrerpolicy="no-referrer" 
+		/>
 				
 		<!--========== Main styles ========== -->
 		<link rel="stylesheet" href="./css/styles.css" />
@@ -38,8 +44,18 @@
 
 				<div>
 					<ul class="contact-flex">
-						<li class="header-contact list"><a class="contact-link selection" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-						<li class="header-contact list"><a class="contact-link selection" href="tel:+380961111111">+38 096 111 11 11</a></li>
+						<li class="header-contact list">
+							<a class="contact-link selection" href="mailto:info@devstudio.com"><svg class="icon icon-marg" width="16" height="12">
+									<use href="./images/icons.svg#icon-envelope"></use>
+								</svg>info@devstudio.com
+								
+							</a>
+						</li>
+						<li class="header-contact list">
+							<a class="contact-link selection" href="tel:+380961111111"><svg class="icon icon-marg" width="10" height="16">
+									<use href="./images/icons.svg#icon-mobile"></use>
+								</svg>+38 096 111 11 11</a>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -153,19 +169,59 @@
 
 		<!-- Раздел футер -->
 		<footer class="footer-bg section-footer">
-			<div class="container">
-				<a class="logo-footer logo-first" href="./index.html">
+			<div class="container container-footer">
+				<div>
+					<a class="logo-footer logo-first" href="./index.html">
 					<span></span>Web<span class="logo-second-white">Studio</span></span>
-				</a>
-				<address class="footer-address">
+					</a>
+					<address class="footer-address">
 					<a class="adress" href="https://goo.gl/maps/JaR8wPoVLPzRB4Zz6" target="_blank" rel="noopener noreferrer">
 						г. Киев, пр-т Леси Украинки, 26
 					</a>
-				</address>
-				<div>
-					<ul class="footer-list">
-						<li class="list"><a class="footer-contact-link selection" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-						<li class="list"><a class="footer-contact-link selection" href="tel:+380961111111">+38 096 111 11 11</a></li>
+					</address>
+					<div>
+						<ul class="footer-list">
+							<li class="list">
+								<a class="footer-contact-link selection" href="mailto:info@devstudio.com">info@devstudio.com</a>
+							</li>
+							<li class="list">
+								<a class="footer-contact-link selection" href="tel:+380961111111">+38 096 111 11 11</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+		<!-- Секция футер-2 -->
+				<div class="container-footer2">
+					<p class="footer-title">присоединяйтесь</p>
+					<ul class="social-link">
+						<li class="list-link list-footer">
+									<a class="item-footer" href="" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+										<svg class="icon-footer" width="20" height="20">
+											<use href="./images/icons.svg#icon-instagram-2"></use>
+										</svg>
+									</a>
+						</li>
+						<li class="list-link list-footer">
+									<a class="item-footer" href="" target="_blank" rel="noopener noreferer">
+										<svg class="icon-footer" width="20" height="20">
+											<use href="./images/icons.svg#icon-twitter-1"></use>
+										</svg>
+									</a>
+						</li>
+						<li class="list-link list-footer">
+									<a class="item-footer" href="" target="_blank" rel="noopener noreferer">
+										<svg class="icon-footer" width="20" height="20">
+											<use href="./images/icons.svg#icon-facebook-1"></use>
+										</svg>
+									</a>
+						</li>
+						<li class="list-link list-footer">
+									<a class="item-footer" href="" target="_blank" rel="noopener noreferer">
+										<svg class="icon-footer" width="20" height="20">
+											<use href="./images/icons.svg#icon-linkedin-1"></use>
+										</svg>
+									</a>
+						</li>
 					</ul>
 				</div>
 			</div>
