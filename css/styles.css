@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+*, *::after, *::before {
   box-sizing: border-box;
 }
 
@@ -173,6 +171,8 @@ button {
   padding-top: 188px;
   padding-bottom: 188px;
   background-color: var(--navy-blue);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),url("../images/bg/people-office\ 1.jpg");
 }
 
 .hero-title {
@@ -227,6 +227,9 @@ button {
 }
 
 .benefits-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   flex-basis: calc((100% - 72px) / 4);
 }
 
@@ -390,4 +393,12 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
+}
+
+/* icons */
+
+.icon {
+  /* display: inline-flex; */
+  fill: tomato;
+  border: 1px solid black;
 }
