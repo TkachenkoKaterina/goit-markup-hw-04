@@ -377,13 +377,16 @@ button {
   justify-content: center;
   color: var(--light-slate);
 
-  border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-link:hover,
-.customers-link:focus {
-  border: 1px solid var(--ocean);
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
+  color: var(--ocean);
+}
+
+.customers-link:hover, .customers-link:focus {
+  border-color: var(--ocean);
 }
 
 .customers-icon {
@@ -394,10 +397,10 @@ button {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-item:hover .customers-icon,
-.customers-item:focus .customers-icon {
+/* .customers-item:hover,
+.customers-item:focus {
   color: var(--ocean);
-}
+} */
 
 /* footer */
 .footer {
@@ -548,7 +551,7 @@ button {
 
 .card-list-link:hover, .card-list-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  transform: translateY(0%);
+  /* transform: translateY(0%); */
 }
 
 .card-list-link:hover .overlay-text,
