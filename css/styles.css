@@ -189,6 +189,8 @@ button {
 
 .hero-section {
   max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 188px;
   padding-bottom: 188px;
   background-color: var(--navy-blue);
